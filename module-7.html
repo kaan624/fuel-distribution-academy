@@ -39,21 +39,94 @@
     <div class="wrap">
       <div class="crumb"><a href="index.html">Academy</a> / Module 07</div>
       <div class="module-num">Module 07</div>
-      <h1>Regulation &amp;amp; compliance, practically</h1>
+      <h1>Regulation &amp; compliance, practically</h1>
+
       <div class="objectives">
         <div class="h">By the end of this module you'll be able to</div>
         <ul>
-          <li>Navigate EPA / environmental rules that touch a distributor day to day.</li>
-          <li>Understand Hazmat transport requirements for moving fuel.</li>
-          <li>Handle fuel/excise taxes and IFTA, plus tank and SPCC obligations.</li>
+          <li>Navigate the EPA / environmental rules that touch a distributor day to day.</li>
+          <li>Understand Hazmat transport requirements for moving fuel by truck.</li>
+          <li>Handle fuel/excise taxes and IFTA, plus tank and SPCC obligations — and see where each creates operational work that software can absorb.</li>
         </ul>
       </div>
-      <p style="color:var(--text-dim)">Compliance is operational, not abstract: every gallon carries taxes, every truck carries Hazmat obligations, every tank carries spill-plan duties. Full module released as the live course reaches it.</p>
-      <div class="ticket" style="background:#161e26;color:var(--text-dim);box-shadow:inset 0 0 0 1px var(--line)">
-        <div class="row" style="border-color:#2b3742"><b style="color:var(--amber)">STATUS</b><span>In development</span></div>
-        <div class="row" style="border-color:#2b3742"><b style="color:var(--amber)">RELEASE</b><span>Added as the live course reaches this module</span></div>
+
+      <p>Compliance in this business isn't abstract paperwork — it's woven into every gallon, every truck, and every tank. The practical lens: each rule creates recurring operational work (tracking, reporting, documentation), and that work is exactly where errors get expensive and where automation pays off.</p>
+
+      <h2>Fuel &amp; excise taxes — the everyday compliance load</h2>
+      <p>Fuel is one of the most heavily taxed commodities, and the distributor sits at the collection point. Practically:</p>
+      <ul>
+        <li><strong>Federal + state taxes</strong> apply per gallon and must be correctly applied, collected, and remitted. In NJ the combined state tax on diesel is 56.1¢/gal (2026), and the PPGRT portion <strong>resets annually by formula</strong> — so rate tables must be kept current.</li>
+        <li><strong>Dyed vs. clear classification</strong> is a tax-critical distinction: dyed (off-road) diesel is tax-exempt, clear (highway) is taxed. Misclassifying a delivery is a tax error, not a cosmetic one.</li>
+        <li><strong>Exemptions and certificates</strong> — some customers (certain government, agricultural, off-road uses) are exempt and must have valid exemption documentation on file. Tracking certificate validity is ongoing work.</li>
+      </ul>
+
+      <h2>IFTA — the interstate trucking wrinkle</h2>
+      <p>The International Fuel Tax Agreement governs how interstate truckers pay fuel taxes apportioned by miles driven in each state. A distributor intersects IFTA in two ways:</p>
+      <ul>
+        <li><strong>Its own fleet</strong> — if the distributor's trucks cross state lines (e.g. NJ/NY/PA), the company files IFTA reports apportioning fuel tax by jurisdiction, based on mileage and fuel records per truck.</li>
+        <li><strong>Its customers' need for data</strong> — fleet-fueling customers rely on clean per-vehicle fuel records to do <em>their</em> IFTA reporting. This is part of why on-site fueling's recordkeeping (Module 4) is worth a premium: the distributor is producing IFTA-grade data as a byproduct.</li>
+      </ul>
+      <p><em>IFTA is fundamentally a data-reconciliation problem: miles per state × fuel per state, per truck, per quarter. It's tedious and error-prone by hand — a clean example of compliance work that's really a data pipeline.</em></p>
+
+      <h2>Hazmat transport — moving the product legally</h2>
+      <p>Diesel and especially gasoline are hazardous materials in transport, regulated federally (DOT/PHMSA). Practically this means:</p>
+      <ul>
+        <li><strong>Driver qualifications</strong> — CDL with hazmat and tanker endorsements, and ongoing training/certification.</li>
+        <li><strong>Vehicle &amp; equipment standards</strong> — compliant tankers, placarding, inspection regimes.</li>
+        <li><strong>Documentation</strong> — shipping papers, manifests, and records that must travel with the load and be retained.</li>
+        <li><strong>Safety &amp; incident protocols</strong> — spill response, reporting obligations.</li>
+      </ul>
+      <p>The recurring work here is <strong>credential and inspection tracking</strong>: which drivers are certified through when, which trucks are inspected through when. Letting one lapse can ground a truck or trigger a violation.</p>
+
+      <h2>Tanks &amp; SPCC — storing the product legally</h2>
+      <p>Because the distributor sells and leases on-site tanks and stores fuel itself, it lives in the world of storage-tank regulation. The key federal rule is <strong>SPCC — Spill Prevention, Control, and Countermeasure</strong> (40 CFR 112):</p>
+      <div class="ticket">
+        <div class="row"><span>SPCC applies if aboveground storage exceeds</span><b>1,320 gallons</b></div>
+        <div class="row"><span>...or completely buried storage exceeds</span><b>42,000 gallons</b></div>
+        <div class="row"><span>(counting only containers ≥ 55 gal)</span><b>each tank's capacity counts</b></div>
+        <div class="row"><span>PE-certified plan required above</span><b>10,000 gallons total</b></div>
+        <div class="row tot"><span>Plan review/update cycle</span><b>every 5 years</b></div>
       </div>
-<nav class="pager"><a href="module-6.html"><div class="dir">← Previous</div><div class="ttl">06 · Customers &amp; segments</div></a><a class="next" href="module-8.html"><div class="dir">Next →</div><div class="ttl">08 · Technology &amp; systems</div></a></nav>
+      <ul>
+        <li><strong>A written SPCC plan</strong> is required for facilities over threshold with a reasonable chance a spill could reach navigable waters — interpreted broadly. It must be kept on site and, above 10,000 gallons, certified by a professional engineer.</li>
+        <li><strong>Secondary containment</strong> (e.g. berms, double-walled tanks) is the core requirement — a way to catch a spill before it escapes.</li>
+        <li><strong>Underground storage tanks (USTs)</strong> carry their own federal and state requirements (registration, leak detection, financial responsibility).</li>
+        <li><strong>This matters for customers too:</strong> a customer leasing a tank may itself cross SPCC thresholds — the distributor that understands this can advise (and sell containment/monitoring), turning compliance into a service.</li>
+      </ul>
+
+      <h2>The throughline: compliance is recurring data work</h2>
+      <p>Step back and every item above is a <strong>tracking-and-reporting loop</strong>: tax tables and remittances, exemption certificates, IFTA reconciliations, driver/truck credentials and inspections, tank inspections and plan-renewal dates. None of it is conceptually hard; all of it is error-prone, deadline-driven, and expensive to get wrong. That makes compliance one of the clearest places where good systems and automation create real, defensible value — the theme Module 8 picks up.</p>
+
+      <div class="terms">
+        <div class="h">Key terms</div>
+        <dl>
+          <dt>PPGRT</dt><dd>NJ Petroleum Products Gross Receipts Tax — the diesel portion is 42.6¢/gal (2026) and resets annually by formula.</dd>
+          <dt>Dyed vs. clear diesel</dt><dd>Dyed = off-road, tax-exempt; clear = highway, taxed. Misclassification is a tax error.</dd>
+          <dt>Exemption certificate</dt><dd>Documentation proving a customer's tax-exempt status; validity must be tracked.</dd>
+          <dt>IFTA</dt><dd>International Fuel Tax Agreement — interstate fuel tax apportioned by miles per state, reported quarterly per truck.</dd>
+          <dt>Hazmat endorsements</dt><dd>CDL credentials (hazmat + tanker) required to legally transport fuel; must be kept current.</dd>
+          <dt>SPCC</dt><dd>EPA Spill Prevention, Control &amp; Countermeasure rule; triggers at 1,320 gal aboveground / 42,000 buried; requires a spill plan and secondary containment.</dd>
+          <dt>Secondary containment</dt><dd>A barrier (berm, double wall) that catches a spill before it can reach waterways — core SPCC requirement.</dd>
+          <dt>UST</dt><dd>Underground storage tank — separately regulated (registration, leak detection, financial responsibility).</dd>
+        </dl>
+      </div>
+
+      <div class="checks">
+        <div class="h">Check your understanding</div>
+        <details class="q">
+          <summary><span class="qn">Q1</span><span>Why is the dyed-vs-clear diesel distinction a compliance issue and not just a product detail?</span><span class="reveal">show answer</span></summary>
+          <div class="ans">Because dyed (off-road) diesel is <strong>tax-exempt</strong> and clear (highway) diesel is taxed (56.1¢/gal in NJ). Delivering one and billing/classifying it as the other is a <strong>tax error</strong> with real liability — under-collecting taxed fuel, or improperly using exempt fuel on-road. Correct classification per delivery is a compliance obligation, not bookkeeping.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qn">Q2</span><span>A customer wants to lease a 2,000-gallon aboveground diesel tank for their yard near a creek. What compliance flag should the distributor raise — and how is that also a sales opportunity?</span><span class="reveal">show answer</span></summary>
+          <div class="ans">2,000 gallons aboveground is over the <strong>SPCC 1,320-gallon threshold</strong>, and proximity to a waterway makes a discharge plausible — so the customer likely needs an <strong>SPCC plan and secondary containment</strong>. That's a compliance flag, but also a chance to sell containment, monitoring, and advisory service: the distributor turns a regulatory burden into a value-added offering and deepens the account.</div>
+        </details>
+        <details class="q">
+          <summary><span class="qn">Q3</span><span>In what sense is IFTA 'really a data pipeline,' and why does that connect to the premium on on-site fueling?</span><span class="reveal">show answer</span></summary>
+          <div class="ans">IFTA is miles-per-state × fuel-per-state, per truck, per quarter — a tedious, error-prone <strong>reconciliation</strong>, not a hard concept. On-site fleet fueling produces clean per-vehicle fuel records as a byproduct, which is exactly the IFTA-grade data the customer needs. So the distributor can charge a premium partly because it's solving the customer's data/compliance problem, not just delivering gallons.</div>
+        </details>
+      </div>
+<div class="foot">Internal training material · figures current as of early 2026 and will drift — verify live prices and tax rates before relying on them.</div><nav class="pager"><a href="module-6.html"><div class="dir">← Previous</div><div class="ttl">06 · Customers &amp; segments</div></a><a class="next" href="module-8.html"><div class="dir">Next →</div><div class="ttl">08 · Technology &amp; systems</div></a></nav>
     </div>
   </main>
 </div>
